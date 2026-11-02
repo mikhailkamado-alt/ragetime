@@ -6,24 +6,24 @@
     <title>Фиджитал-спорт - Отчёт</title>
     <style>
         body {
-            font-family: Georgia, "Times New Roman", serif;
-            background-color: #f5f5f5;
-            color: #222;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #130f24;
+            color: #d4c4f7;
             line-height: 1.7;
-            max-width: 750px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 50px 20px;
         }
         h1 {
-            color: #1a1a2e;
+            color: #c084fc;
             text-align: center;
-            border-bottom: 3px solid #e94560;
+            border-bottom: 3px solid #7e22ce;
             padding-bottom: 15px;
             margin-bottom: 30px;
         }
         h2 {
-            color: #e94560;
-            margin-top: 40px;
+            color: #a855f7;
+            margin-top: 50px;
             margin-bottom: 15px;
             font-size: 1.4em;
         }
@@ -37,19 +37,54 @@
         li {
             margin-bottom: 6px;
         }
+        code {
+            background-color: #2d1b4e;
+            color: #e9d5ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95em;
+        }
         .subtitle {
             text-align: center;
-            color: #666;
+            color: #8b7aa8;
             font-style: italic;
             margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #4c1d95;
+            margin: 20px 0 30px 0;
+            display: block;
+            box-shadow: 0 4px 20px rgba(126, 34, 206, 0.3);
+        }
+        .screenshot-caption {
+            text-align: center;
+            color: #8b7aa8;
+            font-size: 0.9em;
+            margin-top: -20px;
+            margin-bottom: 30px;
+            font-style: italic;
         }
         .footer {
             text-align: center;
             margin-top: 60px;
             padding-top: 20px;
-            border-top: 1px solid #ccc;
-            color: #888;
+            border-top: 1px solid #2d1b4e;
+            color: #6b5b8a;
             font-size: 0.9em;
+        }
+        a {
+            color: #c084fc;
+            text-decoration: none;
+            border-bottom: 1px dotted #c084fc;
+        }
+        a:hover {
+            color: #e9d5ff;
+            border-bottom: 1px solid #e9d5ff;
         }
     </style>
 </head>
@@ -62,25 +97,34 @@
     <p>Выполнил 10 заданий в обучающей консольной игре Gameshell.</p>
     <ul>
         <li>Освоил навигацию по файловой системе Linux</li>
-        <li>Научился работать с командами: cd, ls, cp, mv, mkdir</li>
+        <li>Научился работать с командами: <code>cd</code>, <code>ls</code>, <code>cp</code>, <code>mv</code>, <code>mkdir</code></li>
         <li>Успешно завершил все 10 миссий</li>
     </ul>
+    <img src="{{ "1-para.png" | relURL }}" alt="Gameshell - 10 заданий выполнено" class="screenshot">
+    <p class="screenshot-caption">Рис. 1 — Завершение 10-й миссии в Gameshell</p>
 
     <h2>2 пара: Консольная игра Bash</h2>
     <p>Прошёл 6 уровней в консольной игре на знание Bash.</p>
     <ul>
         <li>Изучил работу с расширенными атрибутами файлов</li>
-        <li>Освоил команду attr для извлечения скрытой информации</li>
+        <li>Освоил команду <code>attr</code> для извлечения скрытой информации</li>
         <li>Развил навыки внимательности и работы в терминале</li>
     </ul>
+    <img src="{{ "2-para.jpg" | relURL }}" alt="Bash - 6 уровней пройдено" class="screenshot">
+    <p class="screenshot-caption">Рис. 2 — Прохождение 6-го уровня в Bash-игре</p>
 
     <h2>3 пара: Python и Cmdchallenge</h2>
     <p>Выполнил задания по программированию и обработке данных в консоли.</p>
     <ul>
-        <li>Coderun: решил 1 задачу на Python ("Средний элемент")</li>
-        <li>Cmdchallenge: выполнил 16 заданий по работе с текстом</li>
-        <li>Научился использовать grep, awk, sed для фильтрации логов и извлечения IP-адресов</li>
+        <li><strong>Coderun:</strong> решил 1 задачу на Python ("Средний элемент")</li>
+        <li><strong>Cmdchallenge:</strong> выполнил 16 заданий по работе с текстом</li>
+        <li>Научился использовать <code>grep</code>, <code>awk</code>, <code>sed</code> для фильтрации логов и извлечения IP-адресов</li>
     </ul>
+    <img src="{{ "3-para-coderun.png" | relURL }}" alt="Coderun - задача на Python" class="screenshot">
+    <p class="screenshot-caption">Рис. 3 — Решение задачи "Средний элемент" на Coderun</p>
+    
+    <img src="{{ "3-para-cmdchallenge.png" | relURL }}" alt="Cmdchallenge - 16 заданий" class="screenshot">
+    <p class="screenshot-caption">Рис. 4 — Выполнение заданий на Cmdchallenge</p>
 
     <h2>4 пара: Создание сайта на GitHub и Hugo</h2>
     <p>Развернул этот одностраничный отчёт в интернете.</p>
@@ -88,7 +132,7 @@
         <li>Установил и настроил Hugo (Extended) на ОС CachyOS</li>
         <li>Создал репозиторий и настроил Git</li>
         <li>Настроил автоматическую сборку и публикацию через GitHub Actions</li>
-        <li>Сайт опубликован и доступен онлайн</li>
+        <li>Сайт опубликован и доступен онлайн: <a href="https://mikhailkamado-alt.github.io/ragetime/">mikhailkamado-alt.github.io/ragetime</a></li>
     </ul>
 
     <div class="footer">

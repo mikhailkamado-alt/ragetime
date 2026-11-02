@@ -1,25 +1,9 @@
 baseURL = 'https://mikhailkamado-alt.github.io/ragetime/'
-languageCode = 'ru-ru'
-title = 'Фиджитал-спорт - Михаил'
-theme = 'nightfall'
+locale = 'ru-ru'
+title = 'Фиджитал-спорт - Отчёт'
+
+# Отключаем всё лишнее, оставляем только главную страницу
+disableKinds = ["taxonomy", "term", "section", "RSS", "sitemap", "robotsTXT"]
 
 [params]
-  description = 'Мой прогресс в изучении фиджитал-спорта'
-  author = 'Mikhail Kamado'
-  
-  # Настройки темы Nightfall
-  darkMode = true
-  accentColor = '#e94560'
-  
-  # Меню навигации
-  [[menu.main]]
-    name = 'Главная'
-    url = '/'
-    weight = 1
-  [[menu.main]]
-    name = 'Достижения'
-    url = '/progress/'
-    weight = 2
-
-[params.social]
-  github = 'mikhailkamado-alt'
+  author = 'Михаил'
